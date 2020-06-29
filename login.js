@@ -25,12 +25,14 @@ var objpeople =[
     for (i = 0; i < objpeople.length; i++){
         if(username == objpeople[i].username && password == objpeople[i].password){
         
-            alert("Welcome "+username + " .You are logged in.");
+         windows.open(welcome.html)
+            
             return
         }
+        else
         {
     
-        alert("Incorect Username and Password");
+        alert("Incorect Username or Password");
     
     
     }
