@@ -23,14 +23,14 @@ var objpeople =[
         var username = document.getElementById("username").value
         var password = document.getElementById("password").value
     for (i = 0; i < objpeople.length; i++){
-        if(username == objpeople[i].username && password == objpeople[i].password)
-        {
-            alert("Welcome "+username + " .You are logged in.");
-            
+        if(username == objpeople[i].username && password == objpeople[i].password){
         
+            alert("Welcome "+username + " .You are logged in.");
+            return
+        }
+        {
     
-    
-        alert("Incorect Username and Password")
+        alert("Incorect Username and Password");
     
     
     }
